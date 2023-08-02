@@ -1,0 +1,32 @@
+{
+		"schema_version": 1,
+		"quilt_loader": {
+				"group": "dev.trigam",
+				"id": "collections",
+				"version": "0.0.1",
+				"metadata": {
+						"name": "Collections",
+						"description": "Collections of various vanilla-styled features.",
+						"contributors": {
+								"fzzyhmstrs": "Mixin help",
+								"Trigam": "Developer"
+						},
+						"contact": {
+								"homepage": "https://collections.trigam.dev",
+								"issues": "https://github.com/Trigam04/Collections/issues",
+								"sources": "https://github.com/Trigam04/Collections"
+						},
+						"icon": "assets/collections/icon.png"
+				},
+				"intermediate_mappings": "net.fabricmc:intermediary",
+				"entrypoints": {
+						"init": "dev.trigam.collections.Collections"
+				},
+				"depends": [
+						{ "id": "quilt_loader", "versions": ">=0.19.1" },
+						{ "id": "quilted_fabric_api", "versions": ">=7.0.2" },
+						{ "id": "minecraft", "versions": ">=1.20" }
+				]
+		},
+		"mixin": "collections.mixins.json"
+}

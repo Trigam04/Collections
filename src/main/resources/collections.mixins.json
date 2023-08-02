@@ -1,0 +1,21 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "dev.trigam.collections.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+		"attributes/TooltipFormatting",
+		"attributes/FullTooltipList",
+        "attributes/attackReach/AddEntityAttributes",
+        "attributes/attackReach/AttackIndicatorMixin",
+        "attributes/attackReach/PlayerAttackReach",
+        "attributes/attackReach/ServerPlayerAttackReach",
+		"attributes/attackReach/SwordReachModifier"
+	],
+    "client": [
+		"TitleScreenMixin"
+    ],
+    "injectors": {
+		"defaultRequire": 1
+    }
+}

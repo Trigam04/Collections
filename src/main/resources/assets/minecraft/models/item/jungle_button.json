@@ -1,0 +1,6 @@
+{
+	"parent": "item/template_button",
+	"textures": {
+		"particle": "block/jungle_planks"
+	}
+}

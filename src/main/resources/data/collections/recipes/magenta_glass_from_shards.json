@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "##",
+        "##"
+    ],
+    "key": {
+        "#": { "item": "collections:magenta_stained_glass_shard" }
+    },
+    "result": {
+        "item": "minecraft:magenta_stained_glass",
+        "count": 1
+    }
+}

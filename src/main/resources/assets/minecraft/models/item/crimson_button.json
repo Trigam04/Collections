@@ -1,0 +1,6 @@
+{
+	"parent": "item/template_button",
+	"textures": {
+		"particle": "block/crimson_planks"
+	}
+}
