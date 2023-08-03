@@ -9,16 +9,21 @@ group = project.maven_group
 
 repositories {
 	mavenCentral()
+	maven { url 'https://jitpack.io' }
 }
 
 dependencies {
 	minecraft libs.minecraft
 	mappings variantOf(libs.quilt.mappings) { classifier 'intermediary-v2' }
-	modImplementation "com.ptsmods:devlogin:3.3.2" // For Fabric and Quilt
 	modImplementation libs.quilt.loader
 
 	modImplementation libs.quilted.fabric.api
 	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
+
+	// Dev Login
+	modImplementation "com.ptsmods:devlogin:3.3.2"
+	// Mixin Extras
+	include(implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:0.2.0-beta.9")))
 }
 
 processResources {

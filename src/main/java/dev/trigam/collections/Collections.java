@@ -15,6 +15,7 @@ public class Collections implements ModInitializer {
 
 	@Override
 	public void onInitialize(ModContainer mod) {
+
 		ItemInit.registerModItems();
 		BlockInit.registerModBlocks();
 		InventoryInit.sortInventoryItems();
