@@ -2,6 +2,8 @@ package dev.trigam.collections.mixin.attributes;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import dev.trigam.collections.attribute.AttributeInit;
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.EntityGroup;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
@@ -40,16 +42,14 @@ public class TooltipFormatting {
 	)
 	public double modifierValue( double original, @Local( ordinal = 0 ) PlayerEntity player, @Local( ordinal = 0 ) EntityAttributeModifier modifier ) {
 		double value = modifier.getValue();
-		System.out.println("It is " + (modifier.getId() == AttributeInit.ATTACK_SPEED_MODIFIER_ID) + " that " + modifier.getId() + " is equal to " + AttributeInit.ATTACK_SPEED_MODIFIER_ID);
 		if (player != null) {
-			if (modifier.getId() == AttributeInit.ATTACK_DAMAGE_MODIFIER_ID) {
-				value += 20D;
-			}
-			if (modifier.getId() == AttributeInit.ATTACK_SPEED_MODIFIER_ID) {
+			if (modifier.getId().toString().equals(AttributeInit.ATTACK_DAMAGE_MODIFIER_ID.toString())) {
+				value += player.getBaseValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
+				value += EnchantmentHelper.getAttackDamage((ItemStack) (Object) this, EntityGroup.DEFAULT);
+			} else if (modifier.getId().toString().equals(AttributeInit.ATTACK_SPEED_MODIFIER_ID.toString())) {
 				System.out.println(original);
 				value += player.getBaseValue(EntityAttributes.GENERIC_ATTACK_SPEED);
-			}
-			if (modifier.getId() == AttributeInit.ATTACK_REACH_MODIFIER_ID) {
+			} else if (modifier.getId() == AttributeInit.ATTACK_REACH_MODIFIER_ID) {
 				value += player.getBaseValue(AttributeInit.ATTACK_REACH);
 			}
 		}
