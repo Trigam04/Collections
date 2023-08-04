@@ -1,21 +1,24 @@
 {
-    "required": true,
-    "minVersion": "0.8",
-    "package": "dev.trigam.collections.mixin",
-    "compatibilityLevel": "JAVA_17",
-    "mixins": [
-		"attributes.TooltipFormatting",
+	"required": true,
+	"minVersion": "0.8",
+	"package": "dev.trigam.collections.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
 		"attributes.FullTooltipList",
-        "attributes.attackReach.AddEntityAttributes",
-        "attributes.attackReach.AttackIndicatorMixin",
-        "attributes.attackReach.PlayerAttackReach",
-        "attributes.attackReach.ServerPlayerAttackReach",
-		"attributes.attackReach.SwordReachModifier"
+		"attributes.TooltipFormatting",
+		"attributes.attackReach.AddEntityAttributes",
+		"attributes.attackReach.AttackIndicatorDistance",
+		"attributes.attackReach.PlayerAttackReach",
+		"attributes.attackReach.ServerPlayerAttackReach",
+		"attributes.attackReach.SwordModifier",
+		"attributes.attackReach.ToolModifier",
+		"attributes.attackReach.TridentModifier",
+		"stacking.ItemAccessor",
+		"stacking.MilkBucket"
 	],
-    "client": [
-		"TitleScreenMixin"
-    ],
-    "injectors": {
+	"client": [
+	],
+	"injectors": {
 		"defaultRequire": 1
-    }
+	}
 }

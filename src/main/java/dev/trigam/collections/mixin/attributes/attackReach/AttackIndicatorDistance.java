@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 @Mixin(GameRenderer.class)
-public class AttackIndicatorMixin {
+public class AttackIndicatorDistance {
 
 	@Shadow @Final @Mutable
 	MinecraftClient client;

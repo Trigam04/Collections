@@ -47,7 +47,6 @@ public class TooltipFormatting {
 				value += player.getBaseValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
 				value += EnchantmentHelper.getAttackDamage((ItemStack) (Object) this, EntityGroup.DEFAULT);
 			} else if (modifier.getId().toString().equals(AttributeInit.ATTACK_SPEED_MODIFIER_ID.toString())) {
-				System.out.println(original);
 				value += player.getBaseValue(EntityAttributes.GENERIC_ATTACK_SPEED);
 			} else if (modifier.getId() == AttributeInit.ATTACK_REACH_MODIFIER_ID) {
 				value += player.getBaseValue(AttributeInit.ATTACK_REACH);
