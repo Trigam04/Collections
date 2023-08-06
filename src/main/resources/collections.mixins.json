@@ -13,6 +13,7 @@
 		"attributes.attackReach.SwordModifier",
 		"attributes.attackReach.ToolModifier",
 		"attributes.attackReach.TridentModifier",
+		"stacking.Bucket",
 		"stacking.ItemAccessor",
 		"stacking.MilkBucket"
 	],

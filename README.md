@@ -11,10 +11,6 @@
 ## Items
 - **Glass Shards**, a new item, which drop when breaking Glass and Glass Panes. Four Glass Shards can be crafted back into a Glass Block.
 - **Sulfur**, mined from ore, which can be crafted with Charcoal to create a peaceful source of Gunpowder.
-<div align="center">
-
-![Sulfur](.github/sulfur.png)
-</div>
 
 ## Combat
 - `collections:generic.attack_reach`, a new attribute which controls how far away the player can attack mobs from.
@@ -22,7 +18,8 @@
 # Changes
 ## Items
 - Changed the stack sizes of Snowballs, Eggs, and Ender Pearls to 64.
-- Changed Water Buckets, Lava Buckets, Milk Buckets, Powder Snow Buckets, and all Fish Buckets to stack to 16.
+- Changed Water Buckets, Lava Buckets, Milk Buckets, and Powder Snow Buckets to stack to 16.
+- Changed the stack size of Beds 64.
 ## Aesthetic
 - Re-textured dirt/grass related blocks to their Minecraft Dungeons textures.
 - Re-textured music discs to actually look good.
